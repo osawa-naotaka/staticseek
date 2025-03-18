@@ -13,6 +13,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [2.7.2] - 
+### Fixed
+- tsc command execution script is added when bundle.
+- ref benchmark bug is fixed.
+
 ## [2.7.1] - 2025-03-02
 ### Fixed
 - fix tf-idf based score formula of HybridTrieBigramInvertedIndex.
@@ -171,7 +176,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - search frontend, google-like syntax
 - sorting search result based on TF-IDF
 
-[Unreleased]: https://github.com/osawa-naotaka/staticseek/compare/v2.7.1...HEAD
+[Unreleased]: https://github.com/osawa-naotaka/staticseek/compare/v2.7.2...HEAD
+[2.7.2]: https://github.com/osawa-naotaka/staticseek/compare/v2.7.1...v2.7.2
 [2.7.1]: https://github.com/osawa-naotaka/staticseek/compare/v2.7.0...v2.7.1
 [2.7.0]: https://github.com/osawa-naotaka/staticseek/compare/v2.6.2...v2.7.0
 [2.6.2]: https://github.com/osawa-naotaka/staticseek/compare/v2.6.1...v2.6.2

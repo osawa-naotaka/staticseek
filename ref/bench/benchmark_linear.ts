@@ -44,6 +44,7 @@ export async function execBenchmark(
         console.log(`indexing time: ${indexing_time} ms`);
         benchmark_results.indexing_time += indexing_time;
 
+        // @ts-ignore error TS2345: Argument of type 'StaticSeekError | StaticSeekIndexRoot<SearchIndex<unknown>>' is not assignable to parameter of type 'StaticSeekIndexRoot<SearchIndex<unknown>>'.
         const index_entry = indexToObject(index);
         const reindex_start = performance.now();
         const reindex = createIndexFromObject(index_entry);

@@ -2,7 +2,7 @@ import type { SearchEnv, SearchIndex, SearchResult, StaticSeekIndexRoot } from "
 import { StaticSeekError } from "@ref/method/base";
 import type { ASTNode } from "@ref/method/parse";
 import { expr } from "@ref/method/parse";
-import { defaultNormalizer, splitBySpace } from "@src/util/preprocess";
+import { defaultNormalizer, splitBySpaceString } from "@src/util/preprocess";
 
 export async function search<T>(
     index: StaticSeekIndexRoot<SearchIndex<T>>,
@@ -114,6 +114,6 @@ export function intersectResults(results: SearchResult[][]): SearchResult[] {
 }
 
 function normalizeQuery(q: string): string {
-    const terms = splitBySpace([q]);
+    const terms = splitBySpaceString(q);
     return terms.map((t) => (t === "OR" ? "OR" : defaultNormalizer(t))).join(" ");
 }
