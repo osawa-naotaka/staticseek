@@ -1,0 +1,19 @@
+{
+  "name": "staticessk-example",
+  "version": "1.0.0",
+  "description": "node.js example of staticessk.",
+  "type": "module",
+  "scripts": {
+    "indexing": "tsx src/indexing.ts",
+    "search": "tsx src/search.ts"
+  },
+  "author": "osawa naotaka",
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^24.9.1",
+    "staticseek": "^2.7.1",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3",
+    "valibot": "^1.1.0"
+  }
+}
